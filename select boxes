@@ -1,0 +1,11 @@
+document.getElementById('s-state').value; /*get the value of the chosen element in the box with id=s-state*/
+
+document.getElementById('s-state').options; /*retrieves an array with all the options. Good when working with older 
+                                              browsers where value property is not available*/
+  
+  function(){
+  
+    var selectedIdx = document.getElementById('s-state').selectedIndex; /*retrieves the index of the elements in the array*/
+    var selectedValue = document.getElementById('s-state').option[selectedIdx].value;
+
+}
