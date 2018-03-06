@@ -1,0 +1,7 @@
+document.getElementById('c-special-gift').checked; /* check boxes uses property checked att the end. Answer is a boolean.
+false                                                 In this case, box not checked so returns, false. Value is not important
+                                                      since all have the same value: YES and you can check multiple boxes. 
+                                                      So, value property does not apply here.
+
+document.querySelector('input[name = r_method]:checked').value; /* in radio boxes you can use querySelector property and the
+                                                                    css selector ":checked" and get the attribute, in this case by name.
