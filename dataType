@@ -1,0 +1,13 @@
+/* ATTENTION to data type!*/
+
+let itemBball = parseInt(document.getElementById('txt-q-bball').value, 10),       /* use "parseInt" to force numbers
+    itemJersey = parseInt(document.getElementById('txt-q-jersey').value, 10),
+    itemPower = parseInt(document.getElementById('txt-q-power').value, 10),
+
+let totalQty = itemBball + itemJersey + itemPower;                                /* if item"" = 2, than totalQty = 6 */
+
+let itemBball = (document.getElementById('txt-q-bball').value),            /* without "parseInt" JS reads "items" like strings
+    itemJersey = (document.getElementById('txt-q-jersey').value),
+    itemPower = parseInt(document.getElementById('txt-q-power').value),
+
+let totalQty = itemBball + itemJersey + itemPower;                        /* in this case, if item"" = 2, than totalQty = 222 */
