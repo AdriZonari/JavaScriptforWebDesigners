@@ -1,0 +1,25 @@
+if (shipingMethod == 'pickup'){
+            shippingCostPer = 0;
+        }else if (shipingMethod == 'usps'){
+            shippingCostPer = 2;
+        }else if (shipingMethod == 'ups'){
+            shippingCostPer = 3;
+        }
+
+        totalShippingCost = shippingCostPer * totalQty;
+
+        estimate = (totalPrice * taxFactor) + totalShippingCost;
+
+/*or*/
+
+switch (shipingMethod) {
+      case 'pickup' :       /* you can also write it like "default", instead of "case 'pickup", since the value is '0'*/
+      shippingCostPer = 0;
+      break;
+      case 'usps :
+      shippingCostPer = 2;
+      break;
+      case 'ups' :
+      shippingCostPer = 3;
+      break;
+}
